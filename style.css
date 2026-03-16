@@ -1,0 +1,96 @@
+/* Configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #2d5a27; /* Verde escuro para leitura */
+    background-color: #f0fff0; /* Verde bem clarinho */
+    overflow-x: hidden;
+}
+
+/* Menu Superior */
+.menu {
+    background-color: #2d5a27;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap; /* Ajusta para mobile */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Estilo dos Slides */
+.slide {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-green {
+    background-color: #e8f5e9;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 20px; }
+h2 { color: #1b5e20; margin-bottom: 15px; }
+
+/* Cards do slide 2 */
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Responsividade */
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 250px;
+}
+
+/* Elementos Interativos (Imagens Dinâmicas) */
+.mouse-leaf {
+    position: absolute;
+    pointer-events: none;
+    font-size: 20px;
+    z-index: 999;
+}
+
+.click-tree {
+    position: absolute;
+    width: 150px;
+    pointer-events: none;
+    transform: translate(-50%, -100%);
+    z-index: 1001;
+}
+
+.shrub {
+    position: fixed;
+    width: 120px;
+    bottom: 10px;
+    transition: opacity 1s;
+    z-index: 900;
+}
